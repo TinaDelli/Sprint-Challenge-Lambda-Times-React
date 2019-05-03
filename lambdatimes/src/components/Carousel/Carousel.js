@@ -5,15 +5,19 @@ export default class Carousel extends Component {
   constructor(props){
     super(props);
     this.state = {
-
+      carousel: []
     }
   }
   componentDidMount(){
-
+    this.setState({
+      carousel: carouselData,
+      index: 0
+    })
   }
 
-  leftClick = () => {
-
+  leftClick = (event) => {
+    // this.setState({
+    //   carousel: 
   }
 
   rightClick = () => {
@@ -21,7 +25,7 @@ export default class Carousel extends Component {
   }
 
   selectedImage = () => {
-    return <img src={} style={{display: 'block'}} />
+    return <img src={this.state.carousel.img} style={{display: 'block'}} />
   }
   
   render(){
