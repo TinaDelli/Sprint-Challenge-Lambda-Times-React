@@ -29,9 +29,21 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes are used to catch bugs before they become a problem. It's important to type check our data that way it insures that for each component we are entering in the correct data type that way we will have less bugs in the future. 
+
 - [ ] Describe a life-cycle event in React?
+
+First is the Birth/Mounting, which is when the component is being built out from ground up. Whatever inital data is accessible will be defined on the constructor phase, then the render method is invoked and componentDidMount gets called. Then we move on to the Growth/Updating phase where setState can be used to change the component's state data, forcing a call to render. Then comes the Un-mounting or Death phase where the component is removed from the screen. componentWillUnmount is called and can be used for any clean up that may need to be done. 
+
 - [ ] Explain the details of a Higher Order Component?
+
+A HOC is an advanced ReactJS pattern that allows us to reuse component logic. It is a function that receives a Component as an argument and returns a new component. This allows us to give some shared functionality between components and avoid repatition. HOC takes in an a component as an argument and then adds some functionality to that supplied component before returning it. We can also use HOC to conditionally render a component based on some sort of variable. 
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+We can use CSS or a CSS PreProcessor like LESS or SASS, Reactstrap, or Styled Components to style components in React. With Styled Components instead of making a stylesheet we create a component that defines the styles of our component by importing in the Styled Components library into our React component. Like a PreProcessor, using this method we can nest our styles so that we can create reusable components that get passed the styling we define. With the Reactstrap library we get some pre-built components that are aleady styled out using the Bootstrap styling library. We also get interactive styled components that we can use for interactivity throughout our react application. With CSS, LESS or SASS don't have to import a library, we can just write out our styles and then import them into our component.
+
 
 ## Project Setup
 
