@@ -68,12 +68,12 @@ class Login extends React.Component{
                 <PageDiv>
                 <WrappedDiv>
                     <h1>Log In For The Latest News From Lambda Times.</h1>
-                    <Button>Log in with Facebook</Button>{''}
+                    <a href="https://www.facebook.com/"><Button>Log in with Facebook</Button></a>
                     <p>Or</p>
                     <form >
                         <input placeholder="username" value={this.state.username} type='text' name='username' onChange={this.handleInput} ></input>
                         <input placeholder="password" value={this.state.password} type='text' name='password' onChange={this.handleInput}></input>
-                        <Button onClick={this.logIn}>Login</Button>{''}
+                        <Button onClick={this.logIn}>Login</Button>
                     </form>
                     <form>Don't have an account? <span>Sign up</span> </form>
                 </WrappedDiv>
