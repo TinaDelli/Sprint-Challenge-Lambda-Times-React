@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 const PageDiv = styled.div `
     margin: 0 auto;
     display: flex;
+    background:black;
 `
 const WrappedDiv = styled.div`
-    margin:10rem 32rem 5rem;
+    margin:10rem 22rem 5rem;
     padding: 0 2rem 8rem 3rem;
     background: white;
     border: 1px solid #b3b3b3
@@ -18,6 +19,7 @@ const WrappedDiv = styled.div`
     }
 
     input{
+        margin-left:1rem;
         margin-bottom:0.5rem;
         padding: 0.5rem 3rem;
         background: #F8F8F8;
