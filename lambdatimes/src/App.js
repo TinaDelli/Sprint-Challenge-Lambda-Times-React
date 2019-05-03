@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import TopBar from './components/TopBar';
-import Header from './components/Header';
-import Content from './components/Content/Content';
+import withAuthenticate from './components/withAuthenticate';
+import Login from './components/Login';
+import AppContent from './components/AppContent';
+
 // import Carousel from './components/Carousel/Carousel';
 
+const ComponentForPage= withAuthenticate(AppContent)(Login);
 
 const App = () => {
   return (
     <div className="App">
-      <TopBar />
-      <Header />
-      {/* <Carousel /> */}
-      <Content />
+      <ComponentForPage />
     </div>
   );
 }
